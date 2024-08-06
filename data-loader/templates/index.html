@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Loader</title>
+    <style>
+        #parsedDataContainer {
+            display: none;
+        }
+        #checkmark {
+            display: none;
+            color: green;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chad's Badass DataLoader</h1>
+    <h1>Paste Item Numbers and Quantities Below:</h1>
+    <textarea id="dataInput" rows="10" cols="50"></textarea><br>
+    <button onclick="processData()">Submit</button>
+    <span id="checkmark">✔</span>
+    <div id="parsedDataContainer">
+        <h2>Parsed Data</h2>
+        <div id="parsedData"></div>
+    </div>
+    <button onclick="startDataLoader()">Start Data Loader</button>
+    <h2>Progress</h2>
+    <div id="progress"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
